@@ -35,3 +35,27 @@ tagline: <a href="http://bit.ly/LColladoTorres">L. Collado-Torres</a>'s academic
   {% endif %}
   </ul>
 </div>
+
+  <div class="pagination">
+    <div class="row">
+      <div class="span2 offset1">
+        {% if paginator.previous_page %}
+          {% if paginator.previous_page == 1 %}
+            <a href="{{ site.baseurl }}" class="previous">Previous</a>
+          {% else %}
+            <a href="{{ site.baseurl }}/page{{paginator.previous_page}}" class="previous">Previous</a>
+          {% endif %}
+        {% endif %}
+      </div>
+
+      <div class="span2">
+        <span class="page_number">Page: {{paginator.page}} of {{paginator.total_pages}}</span>
+      </div>
+
+      <div class="span2">
+        {% if paginator.next_page %}
+          <a href="{{ site.baseurl }}/page{{paginator.next_page}}" class="next">Next</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
