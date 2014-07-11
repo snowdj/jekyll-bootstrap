@@ -27,6 +27,10 @@ author :
 #
 production_url : http://snowdj.github.io/jekyll-bootstrap
 
+# Pagination (added this line)
+paginate: 2
+
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :
@@ -74,6 +78,7 @@ JB :
   tags_path : /tags.html
   atom_path : /atom.xml
   rss_path : /rss.xml
+
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
